@@ -1,0 +1,225 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Contrato para Fotógrafos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Conceito: folha de contatos. Cada quadro da tira é uma cláusula; um deles vem circulado a lápis dermatográfico, como o fotógrafo marca a foto escolhida. */
+:root {
+  --paper: #ECEEED;
+  --panel: #F8F9F8;
+  --ink: #14181A;
+  --muted: #4E5759;
+  --line: #C9CFCD;
+  --mark: #C92A23;
+  --on-mark: #FFFFFF;
+  --f-display: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --f-body: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #101415; --panel: #181D1F; --ink: #ECEEED; --muted: #A3ACAE; --line: #2F373A;
+    --mark: #FF6258; --on-mark: #14181A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #101415; --panel: #181D1F; --ink: #ECEEED; --muted: #A3ACAE; --line: #2F373A;
+  --mark: #FF6258; --on-mark: #14181A; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--f-body); font-size: 17px; line-height: 1.55;
+  padding-block: 20px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1120px; margin-inline: auto; display: flex; flex-direction: column; gap: 88px; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--mark); outline-offset: 3px; }
+.mono { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; letter-spacing: -0.02em; line-height: 1.08; }
+h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); font-weight: 700; }
+p { margin: 0; }
+
+/* topo */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.pill { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--mark); color: var(--mark); padding: 4px 10px; border-radius: 999px; }
+
+/* hero */
+.hero { display: flex; flex-wrap: wrap; gap: 56px 64px; align-items: center; margin-top: -40px; }
+.hero-text { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.hero h1 { font-size: clamp(2.5rem, 6.2vw, 4.6rem); font-weight: 700; }
+.lead { font-size: 1.2rem; color: var(--muted); max-width: 34em; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 14px 20px; align-items: center; }
+.cta {
+  display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px;
+  background: var(--mark); color: var(--on-mark); font-weight: 700; font-size: 1.05rem;
+  text-decoration: none; border-radius: 6px;
+}
+.cta:hover { filter: brightness(1.08); }
+.cta-note { font-size: 0.95rem; color: var(--muted); }
+
+/* folha de contatos */
+.sheet { flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.strip { background: #0D1011; border-radius: 6px; padding: 14px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 10px; }
+.cell { position: relative; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.frame { position: relative; aspect-ratio: 3 / 2; border-radius: 2px; background: linear-gradient(155deg, var(--a), var(--b)); }
+.frame::after { content: attr(data-n); position: absolute; left: 6px; bottom: 4px; font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.1em; color: rgba(255,255,255,0.78); }
+.frame .ic { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); width: 46%; height: 46%; fill: none; stroke: rgba(255,255,255,0.95); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.55)); }
+.cell:nth-child(1) .frame { --a: #9BA5A3; --b: #3C4543; }
+.cell:nth-child(2) .frame { --a: #6E7B80; --b: #222A2D; }
+.cell:nth-child(3) .frame { --a: #B3B0A6; --b: #4B4A45; }
+.cell:nth-child(4) .frame { --a: #7C8A86; --b: #2B3533; }
+.cell:nth-child(5) .frame { --a: #A2A9B0; --b: #343A40; }
+.cell:nth-child(6) .frame { --a: #8E8A84; --b: #302E2B; }
+.cap { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #C9D0CE; line-height: 1.3; }
+.sheet-note { font-size: 0.95rem; color: var(--muted); }
+
+/* seções */
+.sec { display: flex; flex-direction: column; gap: 32px; }
+.sec-head { display: flex; flex-direction: column; gap: 10px; max-width: 40em; }
+.scenes { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0; border-top: 1px solid var(--line); }
+.scene { padding: 20px 20px 20px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.scene h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; }
+.scene p { color: var(--muted); font-size: 0.98rem; }
+
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; counter-reset: s; }
+.steps li { counter-increment: s; display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--ink); padding-top: 14px; min-width: 0; }
+.steps li::before { content: "Passo " counter(s); font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mark); }
+.steps h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
+.steps p { color: var(--muted); font-size: 0.98rem; }
+
+.sample-grid { display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start; }
+.sample-copy { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.doc { flex: 1 1 440px; min-width: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 28px 28px 24px; display: flex; flex-direction: column; gap: 16px; }
+.doc-meta { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.doc h3 { font-size: 1rem; letter-spacing: 0.02em; text-transform: uppercase; font-weight: 700; }
+.doc ol { margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.98rem; }
+.doc li { display: grid; grid-template-columns: 2.6em minmax(0, 1fr); }
+.doc li span:first-child { font-family: var(--f-mono); font-size: 0.85rem; color: var(--muted); padding-top: 2px; }
+.ph { border-bottom: 2px solid var(--mark); }
+
+.band { border-top: 3px solid var(--ink); padding-top: 28px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between; }
+.band h2 { max-width: 16em; }
+
+.faq { border-top: 1px solid var(--line); }
+details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+summary { cursor: pointer; font-weight: 700; font-size: 1.08rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font-family: var(--f-mono); color: var(--mark); font-size: 1.3rem; line-height: 1; }
+details[open] summary::after { content: "–"; }
+details p { margin-top: 10px; color: var(--muted); max-width: 42em; }
+
+footer { border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: var(--muted); max-width: 52em; }
+footer strong { color: var(--ink); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .cta { transition: filter 0.15s ease; }
+}
+@media (max-width: 560px) {
+  .wrap { gap: 64px; }
+  .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .doc { padding: 20px 16px; }
+  .hero { margin-top: -24px; }
+}
+</style>
+
+<div class="wrap">
+
+  <div class="top">
+    <span class="mono">Contrato para fotógrafos</span>
+    <span class="pill">Fase de teste</span>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Fotografe tranquilo. O combinado fica no papel.</h1>
+      <p class="lead">Responda algumas perguntas sobre o trabalho e receba um modelo de contrato claro, feito para o seu tipo de ensaio — pronto para enviar e assinar.</p>
+      <div class="cta-row">
+        <a class="cta" href="https://tally.so/r/vG7QR8">Quero testar grátis</a>
+        <span class="cta-note">Cadastro de 1 minuto. Sem cartão.</span>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="strip" role="img" aria-label="Folha de contatos com seis quadros, cada um nomeado por uma cláusula do contrato e com um ícone: serviço e entrega, valor e forma de pagamento, seleção e tratamento das fotos, cancelamento e remarcação, direito de imagem e uso, e backup e validade.">
+        <div class="cell"><div class="frame" data-n="▸ 1"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h3l1.5-2h9L18 8h3v11H3z"/><circle cx="12" cy="13" r="3.4"/></svg></div><span class="cap">Serviço e entrega</span></div>
+        <div class="cell"><div class="frame" data-n="▸ 2"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6.5" width="18" height="11" rx="1.5"/><circle cx="12" cy="12" r="2.6"/><path d="M6 10v4M18 10v4"/></svg></div><span class="cap">Valor e forma de pagamento</span></div>
+        <div class="cell"><div class="frame" data-n="▸ 3"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M8 12.5l2.6 2.6L16 9.5"/></svg></div><span class="cap">Seleção e tratamento das fotos</span></div>
+        <div class="cell"><div class="frame" data-n="▸ 4"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="1.5"/><path d="M4 9.5h16M8.5 3v4M15.5 3v4"/><path d="M10 13l4 4M14 13l-4 4"/></svg></div><span class="cap">Cancelamento e remarcação</span></div>
+        <div class="cell"><div class="frame" data-n="▸ 5"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 2.8v4.8c0 4.4-3 7.4-7 8.9-4-1.5-7-4.5-7-8.9V5.8z"/><path d="M9 12l2 2 4-4.2"/></svg></div><span class="cap">Direito de imagem e uso</span></div>
+        <div class="cell"><div class="frame" data-n="▸ 6"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 01-.4-8A5.2 5.2 0 0116.7 8.6 3.6 3.6 0 0117 18z"/><path d="M12 11v5.5M12 16.5l-2.2-2.2M12 16.5l2.2-2.2"/></svg></div><span class="cap">Backup, 2ª via e validade</span></div>
+      </div>
+      <p class="sheet-note">Seis das cláusulas que o modelo traz — além de outras, inclusive específicas para o seu tipo de trabalho.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <span class="mono">Antes do contrato</span>
+      <h2>Quando o combinado fica só no WhatsApp</h2>
+    </div>
+    <div class="scenes">
+      <div class="scene"><h3>A data muda na última hora</h3><p>O cliente cancela o ensaio ou o evento com poucos dias de aviso e ninguém lembra o que foi combinado sobre o sinal — ou nada chegou a ser combinado.</p></div>
+      <div class="scene"><h3>O pagamento final atrasa</h3><p>As fotos foram entregues, mas o valor restante fica para depois, sem prazo escrito.</p></div>
+      <div class="scene"><h3>Quantas fotos eram mesmo?</h3><p>Fotógrafo e cliente entendem de formas diferentes a quantidade de fotos e o prazo, e a divergência vira conflito na hora da entrega.</p></div>
+      <div class="scene"><h3>Uso das fotos sem autorização</h3><p>As imagens aparecem em anúncio ou rede social, sem crédito nem aviso, porque o uso não foi definido antes.</p></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <span class="mono">Como funciona o teste</span>
+      <h2>Do cadastro ao contrato em três passos</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Você se cadastra</h3><p>Nome, WhatsApp e tipo de fotografia que faz. Leva um minuto.</p></li>
+      <li><h3>Você responde sobre o trabalho</h3><p>Valor, sinal, data, prazo de entrega, número de fotos e uso das imagens. Pode usar um trabalho real ou um exemplo.</p></li>
+      <li><h3>Você recebe o contrato em PDF</h3><p>Entregue pelo WhatsApp em até 24 horas. Depois, uma conversa de 10 minutos para saber o que funcionou e o que faltou.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec">
+    <div class="sample-grid">
+      <div class="sample-copy">
+        <span class="mono">Trecho de exemplo</span>
+        <h2>Como o texto fica</h2>
+        <p style="color: var(--muted)">Cada contrato é montado conforme o que você e o cliente negociaram: o que está entre colchetes é preenchido com as suas respostas, e as cláusulas se ajustam a cada combinação — valor, sinal, prazo, cancelamento e uso das fotos. Os dados abaixo são fictícios.</p>
+      </div>
+      <article class="doc" aria-label="Trecho de exemplo de contrato">
+        <div class="doc-meta"><span class="mono">Contrato de prestação de serviços fotográficos</span><span class="mono">Exemplo</span></div>
+        <h3>Cláusula 4ª · Do sinal e do cancelamento</h3>
+        <ol>
+          <li><span>4.1</span><span>O CONTRATANTE pagará ao FOTÓGRAFO, como sinal e reserva da data, o valor de <span class="ph">R$ [valor do sinal]</span>, até <span class="ph">[data]</span>.</span></li>
+          <li><span>4.2</span><span>Se o CONTRATANTE desistir do serviço, o sinal não será devolvido.</span></li>
+          <li><span>4.3</span><span>O CONTRATANTE pode pedir uma remarcação, avisando com pelo menos <span class="ph">[número]</span> dias de antecedência, sujeita à agenda do FOTÓGRAFO.</span></li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <section class="band">
+    <h2>Receba um contrato de amostra para o seu próximo trabalho.</h2>
+    <a class="cta" href="https://tally.so/r/vG7QR8">Quero testar grátis</a>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><h2>Perguntas frequentes</h2></div>
+    <div class="faq">
+      <details><summary>Quanto custa participar?</summary><p>Nada. O teste é gratuito. Em troca, peço uma conversa de 10 minutos para entender o que ajudou e o que faltou no contrato.</p></details>
+      <details><summary>Preciso mandar dados dos meus clientes?</summary><p>Não. Você pode usar nomes fictícios ou apenas as iniciais. Peço somente as informações necessárias para montar as cláusulas.</p></details>
+      <details><summary>Este contrato substitui um advogado?</summary><p>Não. É um modelo educativo, sem valor de parecer ou assessoria jurídica. Para casos específicos ou de valor alto, consulte um advogado.</p></details>
+      <details><summary>O que acontece com o meu nome e o meu WhatsApp?</summary><p>Uso apenas para este teste: enviar o contrato e marcar a conversa. Não compartilho com terceiros.</p></details>
+    </div>
+  </section>
+
+  <footer>
+    <p>Modelo educativo. Não substitui a orientação de um advogado.</p>
+  </footer>
+
+</div>
+
+</body></html>
