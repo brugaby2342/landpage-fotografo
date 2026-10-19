@@ -5,28 +5,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-/* Conceito: folha de contatos. Cada quadro da tira é uma cláusula; um deles vem circulado a lápis dermatográfico, como o fotógrafo marca a foto escolhida. */
+/* Conceito: folha de contatos. Cada quadro da tira é uma cláusula. */
 :root {
   --paper: #ECEEED;
   --panel: #F8F9F8;
   --ink: #14181A;
   --muted: #4E5759;
+  --f-muted: #4E5759;
   --line: #C9CFCD;
   --mark: #cd2525;
   --on-mark: #FFFFFF;
+  --field: #C9D0CE;
   --f-display: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif;
   --f-body: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif;
   --f-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #101415; --panel: #181D1F; --ink: #ECEEED; --muted: #A3ACAE; --line: #2F373A;
-    --mark: #FF6258; --on-mark: #14181A; color-scheme: dark;
+    --paper: #101415; --panel: #181D1F; --ink: #ECEEED; --muted: #a5b4b8; --f-muted: #4f5855; --line: #2F373A;
+    --mark: #FF6258; --on-mark: #14181A; --field: #c8c0c0; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #101415; --panel: #181D1F; --ink: #ECEEED; --muted: #A3ACAE; --line: #2F373A;
-  --mark: #FF6258; --on-mark: #14181A; color-scheme: dark;
+  --paper: #101415; --panel: #181D1F; --ink: #ECEEED; --muted: #a5b4b8; --f-muted: #4f5855; --line: #2F373A;
+  --mark: #FF6258; --on-mark: #14181A; --field: #c8c0c0; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body {
@@ -75,7 +77,7 @@ p { margin: 0; }
 .cell:nth-child(4) .frame { --a: #7C8A86; --b: #2B3533; }
 .cell:nth-child(5) .frame { --a: #A2A9B0; --b: #343A40; }
 .cell:nth-child(6) .frame { --a: #8E8A84; --b: #302E2B; }
-.cap { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #C9D0CE; line-height: 1.3; }
+.cap { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--field); line-height: 1.3; }
 .sheet-note { font-size: 0.95rem; color: var(--muted); }
 
 /* seções */
@@ -88,7 +90,7 @@ p { margin: 0; }
 
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; counter-reset: s; }
 .steps li { counter-increment: s; display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--ink); padding-top: 14px; min-width: 0; }
-.steps li::before { content: "Passo " counter(s); font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mark); }
+.steps li::before { content: "Passo " counter(s); font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 .steps h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
 .steps p { color: var(--muted); font-size: 0.98rem; }
 
@@ -99,8 +101,7 @@ p { margin: 0; }
 .doc h3 { font-size: 1rem; letter-spacing: 0.02em; text-transform: uppercase; font-weight: 700; }
 .doc ol { margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.98rem; }
 .doc li { display: grid; grid-template-columns: 2.6em minmax(0, 1fr); }
-.doc li span:first-child { font-family: var(--f-mono); font-size: 0.85rem; color: var(--muted); padding-top: 2px; }
-.ph { background-color: #c8c0c0; }
+.ph { font-family: var(--f-mono); font-size: 0.85rem; color: var(--f-muted); padding-top: 2px; background-color: var(--field); }
 
 .band { border-top: 3px solid var(--ink); padding-top: 28px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between; }
 .band h2 { max-width: 16em; }
@@ -193,7 +194,7 @@ footer strong { color: var(--ink); }
         <div class="doc-meta"><span class="mono">Contrato de prestação de serviços fotográficos</span><span class="mono">Exemplo</span></div>
         <h3>Cláusula 4ª · Do sinal e do cancelamento</h3>
         <ol>
-          <li><span>4.1</span><span>O CONTRATANTE pagará ao FOTÓGRAFO, como sinal e reserva da data, o valor de <span class="ph">R$ [valor do sinal]</span>, até <span class="ph">[data].</span></span></li>
+          <li><span>4.1</span><span>O CONTRATANTE pagará ao FOTÓGRAFO, como sinal e reserva da data, o valor de <span class="ph">R$ [valor do sinal]</span>, até <span class="ph">[data]</span>.</span></li>
           <li><span>4.2</span><span>Se o CONTRATANTE desistir do serviço, o sinal não será devolvido.</span></li>
           <li><span>4.3</span><span>O CONTRATANTE pode pedir uma remarcação, avisando com pelo menos <span class="ph">[número]</span> dias de antecedência, sujeita à agenda do FOTÓGRAFO.</span></li>
         </ol>
