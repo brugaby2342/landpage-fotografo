@@ -10,6 +10,18 @@
 
 O projeto valida, com pessoas reais, se a ideia do produto planejado resolve um problema existente na vida profissional de fotógrafos autônomos e se tem valor suficiente para eles desejarem usá-la e pagar por ela, antes de construir qualquer sistema.
 
+---
+
+## 📊 Metodologia e Product Discovery
+
+O projeto foi construído seguindo premissas rigorosas de validação de mercado e métodos ágeis, estruturado nas seguintes etapas:
+
+1. **Definição de Hipóteses:** Mapeamento de quatro pilares fundamentais — Problema, Solução, Valor e Disposição de Pagar —, cada um com critérios quantitativos e qualitativos fixados antes da coleta de dados.
+2. **Concepção do MVP (Concierge MVP):** Validação da proposta de valor sem desenvolvimento de software complexo, utilizando landing pages, formulários estruturados (Tally) e entrega assistida para mensurar o interesse real dos usuários.
+3. **Métricas de Sucesso:** Acompanhamento de indicadores de funil, nota de satisfação, tempo de execução por contrato e disposição de pagamento para tomada de decisão fundamentada (*Perseverar, Ajustar, Pivotar ou Abandonar*).
+
+---
+
 ## Problema e público
 Muitos fotógrafos freelancers executam seus projetos sem um contrato formal, confiando apenas em acordos verbais ou mensagens informais. Isso muitas vezes os expõe a riscos operacionais e financeiros, como:
 - Cancelamentos de última hora sem sinal de pagamento;
@@ -23,6 +35,8 @@ Fotógrafos autônomos que vendem por projeto, sem estúdio estruturado e sem ap
 ### Early adopters 
 Fotógrafos de eventos sociais e festas particulares da região serrana de Santa Catarina.
 
+---
+
 ## 🚀 A Solução
 
 A proposta consiste em um questionário guiado que traduz as necessidades do fotógrafo em um contrato de prestação de serviços claro, personalizado e focado nas especificidades do mercado fotográfico (direitos autorais, uso de imagem, regras de remarcação e prazos de entrega). 
@@ -31,6 +45,8 @@ A proposta consiste em um questionário guiado que traduz as necessidades do fot
 **Foco no Nicho:** Cláusulas desenhadas especificamente para fotografia de eventos, ensaios e projetos comerciais, preenchendo a lacuna entre modelos genéricos gratuitos na internet e o alto custo de assessoria jurídica tradicional.</br>
 **Experiência Simplificada:** Formulários intuitivos que eliminam a complexidade jurídica para o profissional.</br>
 **Uso Estratégico de IA:** A inteligência artificial é empregada no fluxo de Discovery e estruturação de minutas, otimizando o tempo de operação mantendo o rigor na revisão humana.
+
+---
 
 ## Benchmark
 > Alternativas hoje 
@@ -43,6 +59,8 @@ A proposta consiste em um questionário guiado que traduz as necessidades do fot
 | **Não fazer contrato** | R$ 00,00 | Nenhuma | Exposição a cancelamentos e conflitos | 
 | **Esta proposta** | R$ 37,50 (hipótese) | Média a Alta | Não substitui advogado |
 |  |
+
+---
 
 ## Hipóteses
 
@@ -61,6 +79,8 @@ Formalize seus serviços fotográficos com um contrato claro e personalizado, el
 ### O que a proposta não promete
 Validade jurídica garantida, parecer jurídico ou substituição de um advogado.
 
+---
+
 ## MVP e Experimento
 
 O questionamento principal neste momento consiste em verificar se os profissionais de fotografia autônomos percebem a dificuldade de atuar sem um acordo formal e se um documento pronto, desenhado especificamente para eles, possui valor prático. </br>
@@ -70,15 +90,12 @@ Seu objetivo é o de quantificar a dor, a solução, a utilidade percebida e a i
 A validação ocorre por meio de um MVP concierge, com investimento reduzido: uma operação executada de forma manual por trás de interfaces descomplicadas, onde o usuário visualiza uma ferramenta automatizada, contudo, tanto a elaboração quanto a checagem do instrumento são realizadas manualmente. 
 
 ### Fluxo do Usuário
-1. O usuário entra na página inicial e clica no convite para experimentar gratuitamente.
+1. **Acesso Inicial:** O usuário acessa a página de apresentação do serviço e clica no botão para iniciar um teste sem custos.
+2. **Cadastro:** O preenchimento do formulário inicial coleta o nome, contato e o nicho de atuação do fotógrafo.
+3. **Detalhamento do Trabalho:** O cliente recebe um link com o questionário detalhado (contendo as perguntas essenciais sobre escopo, prazos, valores e regras de cancelamento).
+4. **Geração e Entrega:** Com base nas respostas enviadas, a minuta é gerada, revisada e entregue em formato PDF.
 
-2. Ele preenche a inscrição básica no Tally informando nome, WhatsApp e especialidade.
-
-3. Em seguida, responde a um questionário de 28 perguntas enviado pelo WhatsApp com os termos do trabalho.
-
-4. Em até 24 horas, recebe pelo aplicativo o contrato finalizado em PDF.
-
-5. Por fim, participa de uma conversa rápida de 10 minutos para avaliar a experiência.
+---
 
 ## Métricas e metas
 As metas foram definidas com base na participação de pelo menos 5 usuários reais.
@@ -92,47 +109,27 @@ As metas foram definidas com base na participação de pelo menos 5 usuários re
 | **Tempo gasto por contrato** | até 1 hora |
 |  |
 
+---
+
 ## Resultados
-### Funil
+### Métricas Alcançadas
+- **Taxa de Conclusão do Funil:** [%] dos usuários completaram o fluxo completo (cadastro, formulário, recebimento e entrevista).
+- **Nota Média de Satisfação:** [] (Meta estabelecida: $\ge$ 7).
+- **Disposição de Pagar:** [] dos participantes declararam intenção real de pagamento pelo serviço.
+- **Intenção de Reuso:** [] afirmaram que usariam a ferramenta novamente nos próximos trabalhos.
+- **Tempo Médio de Produção:** [] por contrato (Meta: até 1 hora).
 
-| ETAPA | NÚMERO | % DO TOTAL DE ABORDADOS |
-| :--- | :--- | :--- |
-| **Pessoas Abordadas** | [] | 100% |
-| **Cadastros realizados** | [] | [] |
-| **Formulários de Dados respondidos** | [] | [] |
-| **Contratos entregues** | [] | [] |
-| **Conversas Realizadas** | [] | [] |
-|  |
+### Planilha de Evidências
+O acompanhamento detalhado de cada participante, funil de conversão e validação das hipóteses está centralizado na [Planilha de Evidências].
 
-### Resultado por Hipótese
-
-| HIPÓTESE | CRITÉRIO | RESULTADO | ATINGIDO? (sim ou não) |
-| :--- | :--- | :--- | :--- |
-| **Problema** | 3 de 5 | [] | [] |
-| **Solução** | 3 de 5 | [] | [] |
-| **Valor** | 3 de 5 e nota média 7 ou mais | [] | [] |
-| **Disposição de pagar** | 2 de 5 | [] | [] |
-|  |
-
-### Resultado por Métrica
-
-| MÉTRICA | META | RESULTADO | ATINGIDO? (sim ou não) |
-| :--- | :--- | :--- | :--- |
-| **Formulários completos** | 60% | [] | [] |
-| **Nota de Avaliação** | 7 ou mais | [] | [] |
-| **Disposição de pagar** | 40% | [] | [] |
-| **Usaria de novo** | 60% | [] | [] |
-| **Tempo por contrato** | at;e 1 hora | [] | [] |
-|  |
-
-### Feedback
-- Padrões que se repetiram:
-- O que faltou:
-- O que não estava nas hipóteses:
-- Valor que os participantes consideraram justo:
+---
 
 ## Análise e Decisão
-### Hipóteses confirmadas, refutadas ou parcialmente confirmadas
+
+- **Validação do Problema:** `[DESCREVER SE OS FOTÓGRAFOS CONFIRMARAM O RISCO DE TRABALHAR SEM CONTRATO E COMO O RESOLVIAM ANTES]`.
+- **Avaliação da Solução:** `[ANALISAR SE O CONTEÚDO GERADO FOI COMPREENSÍVEL E ATENDEU ÀS NECESSIDADES ESPECÍFICAS DA FOTOGRAFIA]`.
+- **Análise de Valor e Preço:** `[COMENTAR SE A PERCEPÇÃO DE UTILIDADE JUSTIFICA O VALOR PROPOSTO DE R$ 37,50 OU SE HOUVE RESISTÊNCIA]`.
+
 
 ### Decisão final
 | DECISÃO | QUANDO SE APLICA |
@@ -145,24 +142,45 @@ As metas foram definidas com base na participação de pelo menos 5 usuários re
 
 ### Decisão tomada
 
+*Com base nas metas fixadas antes do experimento, a decisão para o projeto foi:* 
+
 ### Justificativa
 
+---
 
-## Aprendizados
+## 💡 Aprendizados Principais
 
-
-
-
-
-
-
+1. **Aprendizado 1:** 
+2. **Aprendizado 2:** 
+3. **Aprendizado 3:** 
 
 
+---
+
+## 💻 Tecnologias e Ferramentas Utilizadas
+
+O ecossistema do projeto foi construído priorizando agilidade na validação (*Concierge MVP*), baixo custo de operação e eficiência na automação do fluxo:
+
+- **Inteligência Artificial & Discovery:**
+  - **Claude (Anthropic):** 
+
+- **Captura de Leads e Formulários:**
+  - **Tally.so:** 
+
+- **Gestão, Análise e Métricas:**
+  - **Google Sheets:** 
+
+- **Comunicação e Entrega:**
+  - **WhatsApp:** 
+
+## 📂 Estrutura e Materiais
+
+- **[Lean Canvas]:** Modelagem completa do modelo de negócio.
+- **[Planilha de Viabilidade e Evidências]:** Cálculos de margem, ponto de equilíbrio e acompanhamento do funil de testes.
+- **Landing Page & Formulários:** Estrutura de captação de leads e coleta de dados do projeto.
 
 
-
-
-
+---
 
 
 
@@ -170,5 +188,4 @@ Autora: Bruna Gabriela R. Sartor
 
 Este projeto foi desenvolvido como um case de estudo de Product Discovery e validação de produto, estruturando desde a identificação do problema e definição do público-alvo (early adopters) até a modelagem de negócio, definição de MVP (Minimum Viable Product) e métricas de sucesso.
 
-Trabalho da disciplina Metodologias Ágeis e Validação de Produtos (UniFECAF × Rocketseat), curso de Inteligência Artificial e Automação Digital.
-Modelo educativo. Não substitui a orientação de um advogado.
+*Modelo educativo. Não substitui a orientação de um advogado.*
